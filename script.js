@@ -12,7 +12,9 @@ const renderSquares = (sides = 16)=>{
 
     //retrieve container and initialise it to empty.
     let container = document.querySelector("#container");
-    //container.style["background-color"] = "black";
+    container.style["background-color"] = "black";
+    container.style["padding"] = "1rem";
+    
     container.innerHTML = "";
 
     //nested for loop, to feel more two dimensional idk. I'm used to doing it like this
@@ -31,6 +33,8 @@ const renderSquares = (sides = 16)=>{
             container.appendChild(gridSquare);
         }
     }
+
+
     //retrieve all the squares
     let squares = document.querySelectorAll(".gridSquare");
 

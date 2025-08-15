@@ -4,17 +4,21 @@
     margin: 0;
 
 }
-#blackBack{background-color: black;}
+
+#buttonContainer{
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
 
 #container{
-    padding: 1rem;
     display: flex;
     flex-wrap: wrap;
 }
 
 .gridSquare{
     background-color: rebeccapurple;
-    border: 3px solid rgb(0, 0, 0);
+    border: 3px solid rgb(27, 28, 36);
     aspect-ratio: 1;
 }
 /* .hovered{
