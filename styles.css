@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+#container{
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gridSquare{
+    width: calc(100% / 16);
+    background-color: rebeccapurple;
+    border: 3px solid rgb(0, 0, 0);
+    aspect-ratio: 1;
+}
+.gridSquare:hover{
+    background-color: rgb(23, 12, 34);
+}
