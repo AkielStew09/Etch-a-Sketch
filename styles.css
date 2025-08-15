@@ -12,7 +12,6 @@
 }
 
 .gridSquare{
-    width: calc(100% / 16);
     background-color: rebeccapurple;
     border: 3px solid rgb(0, 0, 0);
     aspect-ratio: 1;
