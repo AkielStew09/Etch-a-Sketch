@@ -4,6 +4,7 @@
     margin: 0;
 
 }
+#blackBack{background-color: black;}
 
 #container{
     padding: 1rem;
@@ -16,6 +17,6 @@
     border: 3px solid rgb(0, 0, 0);
     aspect-ratio: 1;
 }
-.hovered{
+/* .hovered{
     background-color: rgb(23, 12, 34);
-}
+} */

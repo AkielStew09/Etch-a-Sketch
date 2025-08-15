@@ -12,6 +12,7 @@ const renderSquares = (sides = 16)=>{
 
     //retrieve container and initialise it to empty.
     let container = document.querySelector("#container");
+    //container.style["background-color"] = "black";
     container.innerHTML = "";
 
     //nested for loop, to feel more two dimensional idk. I'm used to doing it like this
@@ -24,6 +25,7 @@ const renderSquares = (sides = 16)=>{
             let gridSquare = document.createElement("div");
             gridSquare.setAttribute("class", "gridSquare");
             gridSquare.style.width = `calc(100% / ${sides})`;
+            gridSquare.style.opacity = 1;
 
             
             container.appendChild(gridSquare);
@@ -36,7 +38,8 @@ const renderSquares = (sides = 16)=>{
     // which adds the hovered class.
     squares.forEach((square)=>{
         square.addEventListener("mouseenter", (e)=>{
-            e.target.classList.add("hovered");
+            //square.classList.add("hovered");
+            square.style["opacity"] -= 0.1;
         });
     });
     
